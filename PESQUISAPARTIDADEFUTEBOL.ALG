@@ -11,6 +11,7 @@ inicio
       Escreval ("2- Mostrar resultado")
       Escreval ("9- Fim")
       Leia (t)
+      Escreval ("------------------------------------------")
       Escolha (t)
       caso 1
          LimpaTela
@@ -29,14 +30,29 @@ inicio
                curitiba <- curitiba + 1
             caso 3
                empate <- empate + 1
-            outrocaso
+            caso 4
+               Escreval ("VOTO INVÁLIDO")
+            caso 5
+               Escreval ("VOTO INVÁLIDO")
+            caso 6
+               Escreval ("VOTO INVÁLIDO")
+            caso 7
+               Escreval ("VOTO INVÁLIDO")
+            caso 8
                Escreval ("VOTO INVÁLIDO")
             FimEscolha
          Ate (v = 9)
       caso 2
-
+         Escreval ("    RESULTADOS   ")
+         Escreval ("------------------------")
+         Escreval ("votos")
+         Escreval ("Vencedor LONDRINA: ", londrina:5)
+         Escreval ("Vencedor CURITIBA: ", curitiba:5)
+         Escreval ("EMPATE:            ", empate:5)
+         Escreval ( )
       caso 9
          termino <- termino + 1
+         Escreval ("TÉRMINO")
       outrocaso
       FimEscolha
    FimEnquanto
