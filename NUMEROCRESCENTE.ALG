@@ -15,10 +15,18 @@ inicio
       meio <- (n[2])
       menor <- (n[3])
    Senao
-      Se (n[2] < n[1]) e (n[2] > n[3]) entao
+      Se (n[2] > n[1]) e (n[1] > n[3]) entao
          maior <- (n[2])
-         meio <- (n[2])
+         meio <- (n[1])
          menor <- (n[3])
+      Senao
+         Se (n3 > n[1]) e (n[1] > n[2]) entao
+            maior <- (v[3])
+            meio <- (v[1])
+            menor <- (v[2])
+         Senao
+            Escreval ("ERRO NO CÓDIGO")
+         FimSe
       FimSe
    FimSe
    Escreval ("O maior número é:", maior)
