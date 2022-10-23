@@ -4,11 +4,15 @@ var
    preco: vetor [1..2] de real
    cont: inteiro
    valortot, valordesc, valortd: real
-inicio
+Procedimento mercado ( )
+Inicio
    Escreval ("-----------------------")
    Escreval ("        TONHÃO         ")
    Escreval ("-----------------------")
    Escreval ( )
+FimProcedimento
+inicio
+   mercado
    Para cont de 1 ate 2 faca
       Escreva ("NOME DO", cont, " PRODUTO: ")
       Leia (nome[cont])
@@ -17,9 +21,12 @@ inicio
       Escreval ( )
    FimPara
    valortot <- preco[1] + preco[2]
+   Se (valortot > 759.80) entao
+      valordesc <- (valortot) * 20/100
+   FimSe
 
-
-
+   LimpaTela
+   mercado
    Escreval ("VALOR TOTAL: R$", valortot:5:2)
 
    Escreval ("VALOR DO DESCONTO OBTIDO: R$", valordesc:5:2) //se houver
