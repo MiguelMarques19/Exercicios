@@ -6,7 +6,7 @@ var
    valortot, valordesc, valortd: real
 inicio
    Escreval ("-----------------------")
-   Escreval ("        TONHÃO        ")
+   Escreval ("        TONHÃO         ")
    Escreval ("-----------------------")
    Escreval ( )
    Para cont de 1 ate 2 faca
@@ -16,9 +16,12 @@ inicio
       Leia (preco[cont])
       Escreval ( )
    FimPara
+   valortot <- preco[1] + preco[2]
 
 
-   Escreval ("VALOR TOTAL: R$", valortot)
-   Escreval ("VALOR DO DESCONTO OBTIDO: R$", valordesc) //se houver
-   Escreval ("VALOR TOTAL A SER PAGO COM DESCONTO: R$", valortd) //se houver
+
+   Escreval ("VALOR TOTAL: R$", valortot:5:2)
+
+   Escreval ("VALOR DO DESCONTO OBTIDO: R$", valordesc:5:2) //se houver
+   Escreval ("VALOR TOTAL A SER PAGO COM DESCONTO: R$", valortd:5:2) //se houver
 fimalgoritmo
