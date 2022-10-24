@@ -22,6 +22,20 @@ inicio
       FimPara
       Escreva (par)
       Escreva (n[1], n[2], n[3])
+   Senao
+      par <- "Foi aplicada a regra 19 com os NÚMEROS:"
+      para cont <- 1 ate 2 faca
+         Para j <- cont + 1 ate 3 faca
+            Se (n[cont] > n[j]) entao
+               aux <- n[cont]
+               n[cont] <- n[j]
+               n[j] <- aux
+            FimSe
+         FimPara
+      FimPara
+      Escreva (par)
+      Escreva (n[1], n[2], n[3])
+
    FimSe
 
 fimalgoritmo
