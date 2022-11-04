@@ -1,7 +1,7 @@
 algoritmo "DissecandoMatrizes"
 var
    ma: vetor [1..4, 1..4] de inteiro
-   l, c, menu: inteiro
+   l, c, menu, cont: inteiro
 Procedimento op ( )
 Inicio
    EscrevaL ("MENU DE OPÇÕES")
@@ -24,7 +24,6 @@ inicio
    Repita
       op
       Leia (menu)
-      LimpaTela
       Escolha (menu)
       Caso 1
          LimpaTela
@@ -35,7 +34,23 @@ inicio
             EscrevaL()
          FimPara
       Caso 2
+         LimpaTela
+         Para l <- 1 ate 4 faca
+            Para c <- 1 ate 4 faca
+               Se (l = c) entao
+                  ma[l,c] <- ma[l,c]
+               Senao
+                  ma[l,c] <- 0
+               FimSe
+            FimPara
+         FimPara
 
+         Para l <- 1 ate 4 faca
+            Para c <- 1 ate 4 faca
+               Escreva (ma[l,c])
+            FimPara
+            EscrevaL()
+         FimPara
       Caso 3
 
       Caso 4
