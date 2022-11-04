@@ -39,16 +39,10 @@ inicio
          Para l <- 1 ate 4 faca
             Para c <- 1 ate 4 faca
                Se (l = c) entao
-                  ma[l,c] <- ma[l,c]
+                  Escreva (ma[l,c])
                Senao
-                  ma[l,c] <- 0
+                  Escreva ("":2)
                FimSe
-            FimPara
-         FimPara
-
-         Para l <- 1 ate 4 faca
-            Para c <- 1 ate 4 faca
-               Escreva (ma[l,c])
             FimPara
             EscrevaL()
          FimPara
