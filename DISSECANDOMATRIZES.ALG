@@ -35,6 +35,7 @@ inicio
          FimPara
       Caso 2
          LimpaTela
+
          Para l <- 1 ate 4 faca
             Para c <- 1 ate 4 faca
                Se (l = c) entao
